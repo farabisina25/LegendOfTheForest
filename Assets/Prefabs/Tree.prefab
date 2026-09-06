@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1752257108089361751}
   - component: {fileID: 163947224243316654}
   - component: {fileID: 3208939844486001250}
+  - component: {fileID: 5657071667248214380}
+  - component: {fileID: 8525518283273398994}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.2065, y: -4.3883, z: 0}
-  m_LocalScale: {x: 0.86389893, y: 0.760177, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -129,3 +131,53 @@ CapsuleCollider2D:
   m_Offset: {x: -0.005652893, y: 0.002222815}
   m_Size: {x: 1.4524128, y: 0.81843346}
   m_Direction: 1
+--- !u!58 &5657071667248214380
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4318218951695353728}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1.779}
+  m_Radius: 1.42
+--- !u!114 &8525518283273398994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4318218951695353728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca1599fbc316cd429ce41dbf5b6cc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransparentDetection
+  transparencyAmount: 0.8
+  fadeTime: 0.4
