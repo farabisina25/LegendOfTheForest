@@ -66,7 +66,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e223ef9357d983a4c9c5a85c78dc6779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  roamChangeDirFloat: 2
 --- !u!114 &7326857084144424807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   startingHealth: 3
   deathVFXPrefab: {fileID: 1554474919167915205, guid: 5fc04a8f9a2f56f4ea8863287a9ebd35, type: 3}
+  knockBackThrust: 15
 --- !u!114 &3952422570930356697
 MonoBehaviour:
   m_ObjectHideFlags: 0
