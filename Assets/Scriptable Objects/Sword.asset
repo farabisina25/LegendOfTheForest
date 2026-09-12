@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8eebcbecaf19d74886434d4a95dbc98, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: Assembly-CSharp::WeaponInfo
-  weaponPrefab: {fileID: 0}
-  weaponCooldown: 0
+  weaponPrefab: {fileID: 6152933451546298266, guid: 3241a3a78832f4c4a88f7f8a9476acb0, type: 3}
+  weaponCooldown: 0.5
