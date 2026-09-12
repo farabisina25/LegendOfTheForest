@@ -129,5 +129,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Sword
   slashAnimPrefab: {fileID: 2974214102950586319, guid: b591f33f31d9d0541aecfa19dc90d3c7, type: 3}
   slashAnimSpawnPoint: {fileID: 0}
-  weaponCollider: {fileID: 0}
   swordAttackCD: 0.5
+  weaponInfo: {fileID: 11400000, guid: a2202e02d87660144a812d134031fd9b, type: 2}

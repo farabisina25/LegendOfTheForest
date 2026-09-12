@@ -4550,6 +4550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138208475}
   - component: {fileID: 138208476}
+  - component: {fileID: 138208477}
   m_Layer: 0
   m_Name: Active Weapon
   m_TagString: Untagged
@@ -4585,6 +4586,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8a7e9506852624abad404ea069d144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActiveWeapon
+--- !u!114 &138208477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138208474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2994196104699384fa7d15305e04a533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseFollow
 --- !u!1001 &140312938
 PrefabInstance:
   m_ObjectHideFlags: 0

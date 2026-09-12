@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bow
   m_EditorClassIdentifier: Assembly-CSharp::WeaponInfo
   weaponPrefab: {fileID: 79894987570246001, guid: 5c243551bed006949a929411cf404ece, type: 3}
-  weaponCooldown: 1.2
+  weaponCooldown: 0.7
