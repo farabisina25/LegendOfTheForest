@@ -7,7 +7,7 @@ public class Staff : MonoBehaviour, IWeapon
     [SerializeField] private Transform magicLazerSpawnPoint;
 
     private Animator myAnimator;
-    readonly int AttackHash = Animator.StringToHash("Attack");
+    readonly int ATTACK_HASH = Animator.StringToHash("Attack");
 
     private void Awake() {
         myAnimator = GetComponent<Animator>();
@@ -17,11 +17,12 @@ public class Staff : MonoBehaviour, IWeapon
         MouseFollowWithOffset();
     }
     public void Attack() {
-        myAnimator.SetTrigger(AttackHash);
+        myAnimator.SetTrigger(ATTACK_HASH);
     }
 
     public void SpawnStaffProjectileAnimEvent() {
         GameObject newLaser = Instantiate(magicLazer, magicLazerSpawnPoint.position, Quaternion.identity);
+        newLaser.GetComponent<MagicLazer>().UpdateLaserRange(weaponInfo.weaponRange);
     }
 
     public WeaponInfo GetWeaponInfo() {
