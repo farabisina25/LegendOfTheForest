@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 775444197987696093}
   - component: {fileID: 3595295880209950947}
   - component: {fileID: 717115423404926062}
+  - component: {fileID: 6485073369086982514}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -143,3 +144,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Destructible
   destroyVFX: {fileID: 1554474919167915205, guid: b96fe0b0549035941837721218a9bf7e, type: 3}
+--- !u!114 &6485073369086982514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7569791006572978161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9190534d2a9152a43be2c605f9483e64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUpSpawner
+  goinCoinPrefab: {fileID: 4947807147699716358, guid: 591f0fa10332f1d409f12ddfa0a8b8dd, type: 3}
