@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -636880848785946486}
   - component: {fileID: -8503049190483108216}
   - component: {fileID: 3952422570930356697}
+  - component: {fileID: -1084774126126716634}
   m_Layer: 0
   m_Name: Blue Slime
   m_TagString: Untagged
@@ -176,6 +177,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   roamChangeDirFloat: 2
+  attackRange: 5
+  enemyType: {fileID: 0}
+  attackCooldown: 2
+  stopMovingWhileAttacking: 0
 --- !u!114 &7326857084144424807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,3 +258,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knockback
   knockBackTime: 0.2
+--- !u!114 &-1084774126126716634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7534731443968280842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9190534d2a9152a43be2c605f9483e64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickUpSpawner
+  goldCoin: {fileID: 4947807147699716358, guid: 591f0fa10332f1d409f12ddfa0a8b8dd, type: 3}
+  staminaGlobe: {fileID: 4947807147699716358, guid: 74d4d9a98f7b9f747aacbec950c3473d, type: 3}
+  healthGlobe: {fileID: 4947807147699716358, guid: 9424801c97efec440ae336c94f5e87be, type: 3}
