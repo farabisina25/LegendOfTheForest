@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : Singleton<PlayerHealth>
 {
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float knockBackThrustAmount = 10f;
@@ -12,7 +12,9 @@ public class PlayerHealth : MonoBehaviour
     private Knockback knockback;
     private Flash flash;
 
-    private void Awake() {
+    protected override void Awake() {
+        base.Awake();
+
         knockback = GetComponent<Knockback>();
         flash = GetComponent<Flash>();
     }
@@ -27,6 +29,10 @@ public class PlayerHealth : MonoBehaviour
         if(enemy) {
             TakeDamage(1, other.transform);
         }
+    }
+
+    public void HealPlayer(){
+        currentHealth += 1;
     }
 
     public void TakeDamage(int damageAmount, Transform hitTransform) {

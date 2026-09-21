@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7569791006572978161
+--- !u!1 &4947807147699716358
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3239255448518019146}
-  - component: {fileID: 775444197987696093}
-  - component: {fileID: 3595295880209950947}
-  - component: {fileID: 717115423404926062}
-  - component: {fileID: 6485073369086982514}
+  - component: {fileID: 5033210877572419431}
+  - component: {fileID: 5821670646197030517}
+  - component: {fileID: 4351594270099311987}
+  - component: {fileID: 8077300658115682393}
+  - component: {fileID: 1815156767260488138}
+  - component: {fileID: -1850778850853235443}
   m_Layer: 0
-  m_Name: Bush
+  m_Name: Stamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3239255448518019146
+--- !u!4 &5033210877572419431
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569791006572978161}
+  m_GameObject: {fileID: 4947807147699716358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.16, y: -1.94, z: 0}
+  m_LocalPosition: {x: 2.4258761, y: -0.5387604, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &775444197987696093
+--- !u!212 &5821670646197030517
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569791006572978161}
+  m_GameObject: {fileID: 4947807147699716358}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -61,7 +62,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 7871b9df2a0248d40bce3799c85778b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 6cf74d86da9dc9940a22645c8010e65b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 035c105e5bcd90a4da79ba69d465109c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,13 +95,40 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!70 &3595295880209950947
+--- !u!50 &4351594270099311987
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4947807147699716358}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &8077300658115682393
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569791006572978161}
+  m_GameObject: {fileID: 4947807147699716358}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -124,38 +152,64 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.16, y: 0.15999998}
+  m_Offset: {x: 0.00090813637, y: 0.0076077133}
+  m_Size: {x: 0.3401394, y: 0.34756616}
   m_Direction: 0
---- !u!114 &717115423404926062
+--- !u!114 &1815156767260488138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569791006572978161}
+  m_GameObject: {fileID: 4947807147699716358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 809ea006e653f344fadf41dddb66fb69, type: 3}
+  m_Script: {fileID: 11500000, guid: a304367345951b247ac823ca1a87520e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Destructible
-  destroyVFX: {fileID: 1554474919167915205, guid: b96fe0b0549035941837721218a9bf7e, type: 3}
---- !u!114 &6485073369086982514
+  m_EditorClassIdentifier: Assembly-CSharp::Pickup
+  pickUpType: 1
+  pickUpDistance: 4
+  accelerationRate: 0.4
+  moveSpeed: 2
+  animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.0551625
+      value: -0.009653076
+      inSlope: -1.882629
+      outSlope: -1.882629
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.09986463
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  heightY: 1.5
+  popDuration: 0.5
+--- !u!114 &-1850778850853235443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569791006572978161}
+  m_GameObject: {fileID: 4947807147699716358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9190534d2a9152a43be2c605f9483e64, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cdbf24238034c24db45e0f117d13646, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PickUpSpawner
-  goldCoin: {fileID: 4947807147699716358, guid: 591f0fa10332f1d409f12ddfa0a8b8dd, type: 3}
-  staminaGlobe: {fileID: 4947807147699716358, guid: 74d4d9a98f7b9f747aacbec950c3473d, type: 3}
-  healthGlobe: {fileID: 4947807147699716358, guid: 9424801c97efec440ae336c94f5e87be, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::RandomIdleAnimation

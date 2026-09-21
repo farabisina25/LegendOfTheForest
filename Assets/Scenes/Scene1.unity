@@ -4182,42 +4182,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 612501344}
     m_Modifications:
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: stagger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: restTime
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: oscillate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: burstCount
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: angleSpread
-      value: 165
-      objectReference: {fileID: 0}
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: bulletMoveSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: startingDistance
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: timeBetweenBursts
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1237498952699069278, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
-      propertyPath: projectilesPerBurst
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 532923552408466691, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.67
@@ -4264,7 +4228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1614610275419758362, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4322,6 +4286,10 @@ PrefabInstance:
     - target: {fileID: 1614610275419758362, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
       propertyPath: m_Name
       value: Ghost (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614610275419758362, guid: 2d24595bae1565442b400bff3c5bba83, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
