@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 585959079591601123}
   - component: {fileID: 2851057952028925307}
   - component: {fileID: 1544062971346060194}
+  - component: {fileID: 7196295187182717285}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -579,6 +580,7 @@ MonoBehaviour:
   maxHealth: 3
   knockBackThrustAmount: 10
   damageRecoveryTime: 1
+  healthGlobeHealAmount: 1
 --- !u!114 &2851057952028925307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,3 +608,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knockback
   knockBackTime: 0.2
+--- !u!114 &7196295187182717285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866301207818028133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05876d275c3c6444cbe8980a9e949ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stamina
