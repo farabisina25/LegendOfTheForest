@@ -14,6 +14,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private bool canTakeDamage = true;
     private Knockback knockback;
     private Flash flash;
+    const string HEALTH_SLIDER_TEXT = "Health Slider";
 
     protected override void Awake() {
         base.Awake();
@@ -38,7 +39,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     public void HealPlayer(){
         if (currentHealth < maxHealth) { 
-            currentHealth += 1;
+            currentHealth += healthGlobeHealAmount;
             UpdateHealthSlider();
         }
     }
@@ -70,7 +71,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private void UpdateHealthSlider() {
         if(healthSlider == null) {
-            healthSlider = GameObject.Find("Health Slider").GetComponent<Slider>();
+            healthSlider = GameObject.Find(HEALTH_SLIDER_TEXT).GetComponent<Slider>();
         }
 
         healthSlider.maxValue = maxHealth;
