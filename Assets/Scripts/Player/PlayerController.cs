@@ -38,11 +38,18 @@ public class PlayerController : Singleton<PlayerController>
         playerControls.Combat.Dash.performed += _ => Dash();
 
         startingMoveSpeed = moveSpeed;
+
+        ActiveInventory.Instance.EquipStartingWeapon();
     }
 
     private void OnEnable(){
         playerControls.Enable();
     }
+
+    private void OnDisable(){
+        playerControls.Disable();
+    }
+
     private void Update(){
         PlayerInput();
     }
@@ -62,7 +69,7 @@ public class PlayerController : Singleton<PlayerController>
         myAnimator.SetFloat("moveY", movement.y);
     }
     private void Move(){
-        if(knockback.GettingKnockedBack){
+        if(knockback.GettingKnockedBack || PlayerHealth.Instance.isDead){
             return;
         }
         rb.MovePosition(rb.position + movement *(moveSpeed * Time.fixedDeltaTime));
